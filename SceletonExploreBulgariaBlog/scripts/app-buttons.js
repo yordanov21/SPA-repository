@@ -1,15 +1,3 @@
-// import controllers from '../controllers/index.js';
-
-// let touristsitesBtn = document.getElementById('touristsites');
-
-// console.log(touristsitesBtn);
-
-// touristsitesBtn.addEventListener('click', () => {
-
-//     this.get('#/cause/dashboard', controllers.cause.get.dashboard);
-// })
-
-
 function myFunction(e) {
 
     let btnText = e;
@@ -37,6 +25,7 @@ function myFunction(e) {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        destination.style.width = '40%';
+        destination.style.width = '30%';
+
     }
 }
