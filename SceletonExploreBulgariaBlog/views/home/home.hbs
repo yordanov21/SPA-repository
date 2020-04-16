@@ -1,0 +1,111 @@
+{{> header}}
+
+{{#if isLoggedIn}}
+<div class="container home wrapper  my-md-5 pl-md-5">
+    <div class="profile home-text col-md-6 text-center col-lg">
+        <img class="profile-img" src="./images/user.png" />
+        <div class="profile-info">
+            <p>Username: <small>{{ username}}</small></p>
+            <p class="infoType">Has {{ideas.count}} ideas =)</p>
+
+            <p>Dinner Recipe</p>
+            <p>4 easy DIY ideas to try!</p>
+            <p>No ideas yet</p>
+        </div>
+    </div>
+</div>
+
+{{else}}
+<div class="mainpart">
+    <h1>101 Аmazing Tourist Sites in Bulgaria</h1>
+    <div class="bottom text-center">
+        <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
+    </div>
+    {{!-- <button id="touristsites" class="btn btn-secondary btn-lg " type="submit">Tourist Sites</button> --}}
+</div>
+<div class="stories">
+    <article class="nature">
+        <a href="#/articles/mountains">
+            <section class="mointain">
+                <h2>Climb the Mointains of Bulgaria</h2>
+                <p>Mountains constitute a significant part of Bulgaria and are dominant in the southwest and central
+                    parts.
+                    Bulgaria's highest mountains are Rila (highest peak Musala, 2925 m; the highest in the Balkans) and
+                    Pirin (highest peak Vihren, 2914 m). The large mountain chain of Stara planina (Balkan Mountains)
+                    runs
+                    west-east across the entire country, bisecting it and giving the name to the entire Balkan
+                    peninsula.
+                    Other extensive mountains are the massifs Rhodopes and Strandzha in the south.</p>
+
+            </section>
+        </a>
+        <a href="">
+            <section class="sea">
+                <h2>Еnjoy the Black Sea coast</h2>
+                <p>The Bulgarian Black Sea Coast , covers the entire eastern bound of Bulgaria stretching from the
+                    Romanian
+                    Black Sea resorts
+                    in the north to European Turkey in the south, along 378 km of coastline. White and golden sandy
+                    beaches
+                    occupy approximately 130 km of the 378 km long coast. The region is an important center of tourism
+                    during the summer season (May–October), drawing millions of foreign and local tourists alike and
+                    constituting one of the country's most popular tourist destinations.</p>
+            </section>
+        </a>
+
+    </article>
+    <article class="ather">
+        <a href="">
+            <section class="city">
+                <h2>Visit the Cities of Bulgaria</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas non exercitationem nostrum labore
+                    molestiae
+                    cupiditate repudiandae minima temporibus aliquid harum est, ipsum expedita id. Similique
+                    necessitatibus
+                    adipisci ullam minus laboriosam?</p>
+            </section>
+        </a>
+        <a href="">
+            <section class="legacy">
+                <h2>Expore the Legacy of Bulgaria</h2>
+                <p>Bulgaria is a country with 1900 years of history. The land is famous for its nature and a great
+                    variety
+                    of well preserved cultural and historical monuments dating to the ancient times. With this tour we
+                    want
+                    to introduce Bulgaria from ancient times till today, from beautiful green mountains to the wonderful
+                    beaches at Bulgarian Sea Coasts (a 378 km long coastal strip), a treasure of nature - over 500
+                    mineral
+                    springs which define Bulgaria as a preferred destination for SPA - recreation and treatment. The
+                    tour
+                    includes the most significant Bulgarian treasures included in the UNESCO World Heritage and 24
+                    Wonders
+                    of Bulgaria.</p>
+            </section>
+        </a>
+
+
+    </article>
+
+</div>
+
+<div class="container home wrapper  my-md-5 pl-md-5">
+
+    <div class="d-md-flex flex-md-equal ">
+        <div class="col-md-5">
+            <img class="responsive" src="./images/tropical-foliage-background-with-blank-card_24972-451.jpg" />
+        </div>
+        <div class="home-text col-md-7">
+            <h2 class="featurette-heading">Do you wonder if your idea is good?</h2>
+            <p class="lead">Join our family =)</p>
+            <p class="lead">Post your ideas!</p>
+            <p class="lead">Find what other people think!</p>
+            <p class="lead">Comment on other people's ideas.</p>
+        </div>
+    </div>
+    <div class="bottom text-center">
+        <a class="btn btn-secondary btn-lg " href="#/user/login">Get Started</a>
+    </div>
+</div>
+{{/if}}
+
+{{> footer}}

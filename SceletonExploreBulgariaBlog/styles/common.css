@@ -1,0 +1,69 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: url("../images/winter_head.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: url("../images/header/White-Abstract-Backgrounds-Gallery-47-Plus-PIC-WPW404836.jpg");
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-footer {
+    position: relative;
+    float: left;
+    left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(27, 38, 49)
+}
+
+nav img {
+    height: 5rem;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, 0.39);
+    font-size: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+footer ul li a {
+    padding: 0 10px;
+    margin: 0;
+    color: #C7C7C7;
+}
+
+footer ul li:nth-child(n+2) {
+    border-left: 1px solid #C7C7C7;
+}
