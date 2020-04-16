@@ -1,70 +1,83 @@
-            * {
-                box-sizing: border-box;
-                margin: 0 auto;
-                padding: 0;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-            
-            .sites {
-                display: flex;
-                flex-flow: row wrap;
-                flex-direction: row wrap;
-                justify-content: space-around;
-                width: 90%;
-                background-color: #f5f5f5;
-                color: rgba(0, 0, 0);
-                font-size: 20px;
-            }
-            
-            .sites .sectionsites {
-                display: flex;
-                flex-direction: column wrap;
-                justify-content: center;
-            }
-            
-            .sectionsites .site {
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: space-between;
-                margin: 1em;
-                padding: 0;
-                background-color: white;
-                border-radius: 1em;
-                min-width: 5em;
-                width: 20%;
-            }
-            
-            .pic {
-                padding-bottom: 10px;
-                margin: 0;
-                width: 100%;
-            }
-            
-            #more {
-                display: none;
-            }
-            
-            .buttonssection {
-                display: flex;
-                /* flex-flow: row wrap; */
-                flex-direction: row wrap;
-                justify-content: space-between;
-            }
-            
-            .mainsection img {
-                width: 100%;
-            }
-            
-            h3,
-            h4,
-            p {
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            
-            .site .pic img {
-                width: 100%;
-                min-height: 10em;
-                border-top-left-radius: 1em;
-                border-top-right-radius: 1em;
-            }
+ * {
+     box-sizing: border-box;
+     margin: 0 auto;
+     padding: 0;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ 
+ .sites {
+     display: flex;
+     flex-flow: row wrap;
+     flex-direction: row wrap;
+     justify-content: space-around;
+     width: 90%;
+     background-color: #f5f5f5;
+     color: rgba(0, 0, 0);
+     font-size: 20px;
+ }
+ 
+ .sites .sectionsites {
+     display: flex;
+     flex-direction: column wrap;
+     justify-content: center;
+ }
+ 
+ .sectionsites .site {
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: space-between;
+     margin: 1em;
+     padding: 0;
+     background-color: white;
+     border-radius: 1em;
+     min-width: 5em;
+     width: 20%;
+ }
+ 
+ .pic {
+     padding-bottom: 10px;
+     margin: 0;
+     width: 100%;
+ }
+ 
+ #more {
+     display: none;
+ }
+ 
+ .buttonssection {
+     display: flex;
+     /* flex-flow: row wrap; */
+     flex-direction: row wrap;
+     justify-content: space-between;
+ }
+ 
+ .mainsection img {
+     width: 100%;
+ }
+ 
+ h3,
+ h4,
+ p {
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ 
+ .site .pic img {
+     width: 100%;
+     min-height: 10em;
+     border-top-left-radius: 1em;
+     border-top-right-radius: 1em;
+ }
+ 
+ #map {
+     /* The height is 200 pixels */
+     height: 200px;
+     /* The width is the width of the div */
+     width: 100%;
+     margin: 0;
+ }
+ 
+ .location {
+     padding: 0;
+     margin: 0;
+ }
