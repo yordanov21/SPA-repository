@@ -19,7 +19,9 @@ body {
     padding: 0;
 }
 
-.navbar-brand {}
+.navbar-brand {
+    background-color: grey;
+}
 
 .data-container {
     background: #ffebee;
