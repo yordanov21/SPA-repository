@@ -1,7 +1,6 @@
 function myFunction(e) {
-
     let btnText = e;
-    let destination = btnText.parentNode.parentNode;
+    let destination = btnText.parentNode.parentNode.parentNode;
 
     var mainSection = destination.childNodes[1];
 
