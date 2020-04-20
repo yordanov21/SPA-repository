@@ -107,3 +107,8 @@ h5 {
 .secondarysection {
     width: 100%;
 }
+
+.btn-sites:hover {
+    filter: brightness(85%);
+    color: white;
+}

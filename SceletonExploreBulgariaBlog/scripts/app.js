@@ -4,10 +4,11 @@ const app = Sammy('#root', function() {
 
     this.use('Handlebars', 'hbs');
     //!!!Kogato natiskame buton izpulnqvame get!!!!
+
     //Home
     this.get('#/home', controllers.home.get.home);
-
-
+    //About
+    this.get('#/about', controllers.home.get.about);
     //Articles
     this.get('#/articles/mountains', controllers.articles.get.mountain);
 
@@ -28,6 +29,10 @@ const app = Sammy('#root', function() {
     ////create
     this.get('#/cause/create', controllers.cause.get.create);
     this.post('#/cause/create', controllers.cause.post.create);
+
+    this.get('#/cause/create101sites', controllers.cause.get.create101sites);
+    this.post('#/cause/create101sites', controllers.cause.post.create);
+
     this.get('#/cause/details/:causeId', controllers.cause.get.details);
 
 

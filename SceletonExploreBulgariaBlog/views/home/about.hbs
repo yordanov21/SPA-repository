@@ -1,22 +1,13 @@
 {{> header}}
 
-{{#if isLoggedIn}}
-<div class="container home wrapper  my-md-5 pl-md-5">
-    <div class="profile home-text col-md-6 text-center col-lg">
-        <img class="profile-img" src="./images/user.png" />
-        <div class="profile-info">
-            <p>Username: <small>{{ username}}</small></p>
-            <p class="infoType">Has {{ideas.count}} ideas =)</p>
-
-            <p>Dinner Recipe</p>
-            <p>4 easy DIY ideas to try!</p>
-            <p>No ideas yet</p>
-        </div>
+<h1>About page in progres!!!!!!!!!!</h1>
+<div class="mainpart">
+    <h1>101 Аmazing Tourist Sites in Bulgaria</h1>
+    <div class="bottom text-center">
+        <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
     </div>
+    {{!-- <button id="touristsites" class="btn btn-secondary btn-lg " type="submit">Tourist Sites</button> --}}
 </div>
-
-{{else}}
-
 <div class="stories">
     <article class="nature">
         <a href="#/articles/mountains">
@@ -81,32 +72,25 @@
     </article>
 
 </div>
-<div class="mainpart">
-    <h1>101 Аmazing Tourist Sites in Bulgaria</h1>
-    <div class="bottom text-center">
-        <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
-    </div>
-    {{!-- <button id="touristsites" class="btn btn-secondary btn-lg " type="submit">Tourist Sites</button> --}}
-</div>
+
 <div class="container home wrapper  my-md-5 pl-md-5">
 
     <div class="d-md-flex flex-md-equal ">
         <div class="col-md-5">
-          
-            <img class="responsive" src="https://www.creativefabrica.com/wp-content/uploads/2017/08/Travel-Explore-black-1.jpg"/>
+            <img class="responsive" src="./images/tropical-foliage-background-with-blank-card_24972-451.jpg" />
         </div>
         <div class="home-text col-md-7">
-            <h2 class="featurette-heading">Did you wondering where to go in Bulgaria?</h2>
-            <p class="lead">Join our family <i class="far fa-smile"></i></p>
-            <p class="lead">Explore 101 amazing tourist sites in Bulgaria</p>
-            <p class="lead">Find what other people like!</p>
-            <p class="lead">Make your own collection of visited places</p>
+            <h2 class="featurette-heading">Do you wonder if your idea is good?</h2>
+            <p class="lead">Join our family =)</p>
+            <p class="lead">Post your ideas!</p>
+            <p class="lead">Find what other people think!</p>
+            <p class="lead">Comment on other people's ideas.</p>
         </div>
     </div>
     <div class="bottom text-center">
-        <a class="btn btn-secondary btn-lg " href="#/user/login">Login</a>
+        <a class="btn btn-secondary btn-lg " href="#/user/login">Get Started</a>
     </div>
 </div>
-{{/if}}
+
 
 {{> footer}}

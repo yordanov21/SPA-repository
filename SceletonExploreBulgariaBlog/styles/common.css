@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url("../images/winter_head.jpg");
+    background: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,19 +21,22 @@ body {
 
 .navbar-brand {
     background-color: grey;
+    margin: 0;
 }
 
 .data-container {
-    background: #ffebee;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
-nav {
-    position: fixed;
+#navId {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     top: 0;
-    background: url("../images/header/White-Abstract-Backgrounds-Gallery-47-Plus-PIC-WPW404836.jpg");
+    background: url("/images/header/winter_head.jpg");
     height: 100%;
     max-height: 100%;
     width: 100%;
@@ -41,10 +44,25 @@ nav {
     font-size: 20px;
 }
 
-.container-footer {
-    position: relative;
-    float: left;
-    left: 30px;
+#headerButtonSite {
+    display: none;
+}
+
+#navId:hover {
+    height: 600px;
+    justify-content: start;
+}
+
+#navId:hover>#headerButtonSite {
+    padding-top: 150px;
+    display: block;
+}
+
+nav .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
@@ -54,6 +72,22 @@ nav a {
 
 nav img {
     height: 5rem;
+}
+
+#navbarResponsive {
+    width: 250px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+nav .container:nth-child(2):hover {
+    display: block;
+}
+
+.container-footer {
+    position: relative;
+    float: left;
+    left: 30px;
 }
 
 footer {

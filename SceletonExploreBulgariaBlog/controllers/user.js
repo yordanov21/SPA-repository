@@ -47,12 +47,13 @@ export default {
 
             const { username, password, repeatPassword } = context.params;
             if (password === repeatPassword) {
-
+                debugger;
                 models.user.register(username, password)
                     .then((response) => {
                         context.redirect('#/user/login');
                     })
-                    .catch((e) => console.error(e))
+                    .catch((e) => console.error(e));
+
 
             }
 

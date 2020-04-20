@@ -33,8 +33,12 @@
                     </div>
                 </div>
                 <div class="buttonssection">
-                    <button onclick="myFunction(this)" id="myBtn">Read more</button>
-                    <a href="">Get It</a>
+                    <button class="btn-sites" onclick="myFunction(this)" id="myBtn">Read more</button>
+                    {{#if isLoggedIn}}
+
+                   <button class="btn-sites" onclick="getItfunction(this)"><a class="btn-sites" href="#/cause/create101sites">Get It</a></button>
+                    {{else}}
+                    {{/if}}
                 </div>
             </section>
         </div>

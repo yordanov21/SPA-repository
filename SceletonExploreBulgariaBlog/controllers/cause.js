@@ -29,6 +29,11 @@ export default {
                 this.partial('../views/cause/create.hbs')
             })
         },
+        create101sites(context) {
+            extend(context).then(function() {
+                this.partial('../views/cause/create101.hbs')
+            })
+        },
 
         details(context) {
             const { causeId } = context.params;

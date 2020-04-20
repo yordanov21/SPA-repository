@@ -8,6 +8,13 @@ export default {
                 this.partial('../views/home/home.hbs');
 
             })
+        },
+        about(context) {
+
+            extend(context).then(function() {
+                this.partial('../views/home/about.hbs');
+
+            })
         }
     }
 

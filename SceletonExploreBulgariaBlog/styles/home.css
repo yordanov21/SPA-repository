@@ -114,3 +114,19 @@ textarea {
     filter: brightness(90%);
     color: white;
 }
+
+.mointain {
+    background: url("../images/articles/mounrains.jpg")
+}
+
+.sea {
+    background: url("../images/articles/photo_verybig_153044.jpg")
+}
+
+.city {
+    background: url("../images/articles/city.jpg")
+}
+
+.legacy {
+    background: url("../images/articles/expolere.jpg")
+}

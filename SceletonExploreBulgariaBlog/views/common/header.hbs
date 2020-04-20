@@ -1,17 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light " id="navId">
     <div class="container">
 
         <div class="data-container">
-            <a class="navbar-brand" href="#/home">Hover Me </a>
+            <a href="#/home"><img src="/images/header/101.png" alt=""></a>
         </div>
-        {{!-- <a class="navbar-brand" href="#/home">
-            <img src="./images/header/trip-logo-png-transparent.png" alt="">
-        </a> --}}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+
+        {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        </button> --}}
+        <div id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {{#if isLoggedIn}}
                 <li class="nav-item active">
@@ -25,6 +23,12 @@
                 </li>
                 {{else}}
                 <li class="nav-item">
+                    <a class="nav-link" href="#/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/about">About</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#/user/login">Login</a>
                 </li>
                 <li class="nav-item">
@@ -33,6 +37,9 @@
                 {{/if}}
             </ul>
         </div>
+    </div>
+    <div class="bottom text-center" id="headerButtonSite">
+        <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
     </div>
 </nav>
 
