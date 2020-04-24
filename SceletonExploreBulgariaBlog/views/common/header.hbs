@@ -5,10 +5,6 @@
             <a href="#/home"><img src="/images/header/101.png" alt=""></a>
         </div>
 
-        {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> --}}
         <div id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {{#if isLoggedIn}}
@@ -42,39 +38,3 @@
         <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
     </div>
 </nav>
-
-
-
-
-{{!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-                       добавяме пътя в href-a
-        <a class="navbar-brand" href="#/home">DonUni</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-
-                //вкарваме ги в тази if/else конструкция и спрямо булевата променлива isLoggedIn ще се визуализират
-                {{#if isLoggedIn}}
-                <li class="nav-item">
-                              добавяме пътя в href-a за dashboard
-                    <a class="nav-link" href="#/cause/dashboard">$$$$$$$$$$$$$$$$$$$</a>
-                </li>
-                <li class="nav-item">
-                           добавяме пътя в href-a за logout
-                    <a class="nav-link" href="#/user/logout">Logout ({{ username }})</a>
-                </li>
-                {{else}}
-                <li class="nav-item">
-                добавяме пътя в href-a
-                    <a class="nav-link" href="#/user/login">Login</a>
-                </li>
-                {{/if}}
-
-            </ul>
-        </div>
-    </div>
-</nav> --}}

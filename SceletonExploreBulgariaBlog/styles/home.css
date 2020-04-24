@@ -115,18 +115,37 @@ textarea {
     color: white;
 }
 
+#article_mountain {
+    height: 350px;
+}
+
+#article_sea {
+    height: 250px;
+}
+
+#article_city {
+    height: 250px;
+}
+
+#article_legacy {
+    height: 350px;
+}
+
 .mointain {
-    background: url("../images/articles/mounrains.jpg")
+    background: url("../images/articles/mounrains.jpg");
 }
 
 .sea {
-    background: url("../images/articles/photo_verybig_153044.jpg")
+    background: url("../images/articles/photo_verybig_153044.jpg");
+    height: 350px;
 }
 
 .city {
-    background: url("../images/articles/city.jpg")
+    background: url("../images/articles/city.jpg");
+    height: 350px;
 }
 
 .legacy {
-    background: url("../images/articles/expolere.jpg")
+    background: url("../images/articles/expolere.jpg");
+    height: 250px;
 }
