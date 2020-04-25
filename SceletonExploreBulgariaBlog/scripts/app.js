@@ -9,9 +9,10 @@ const app = Sammy('#root', function() {
     this.get('#/home', controllers.home.get.home);
     //About
     this.get('#/about', controllers.home.get.about);
+
     //Articles
     this.get('#/articles/mountains', controllers.articles.get.mountain);
-
+    this.get('#/articles/cities', controllers.articles.get.city);
     //tuirism101sides
     this.get('#/tourist101sites/tourist101sites', controllers.tourist101sides.get.sites);
 

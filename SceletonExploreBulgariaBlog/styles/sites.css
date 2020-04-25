@@ -35,6 +35,11 @@
     box-shadow: 0 0 20px gray;
 }
 
+.site:hover {
+    transition: transform 0.7s;
+    transform: scale(1.05);
+}
+
 .pic {
     padding-bottom: 10px;
     margin: 0;
