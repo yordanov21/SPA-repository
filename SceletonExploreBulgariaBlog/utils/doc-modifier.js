@@ -1,4 +1,4 @@
 export default function(d) {
-    // взима документа спретва data-a и ще му вземе и id-то
+    // take the document spread the data and take the id
     return {...d.data(), id: d.id }
 }

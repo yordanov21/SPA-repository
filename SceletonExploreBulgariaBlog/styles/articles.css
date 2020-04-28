@@ -16,10 +16,26 @@ html {
 
 .mountain_container {
     background-image: url(/images/articles/mountains/winter_head.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .city_container {
     background-image: url(/images/articles/city.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sea_container {
+    background-image: url(/images/articles/photo_verybig_153044.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.legacy_container {
+    background-image: url(/images/articles/expolere.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .main h2 {
@@ -126,4 +142,12 @@ html {
 .articles_anchor {
     text-decoration: none;
     color: rgb(27, 38, 49)
+}
+
+div.article_text {
+    margin: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }

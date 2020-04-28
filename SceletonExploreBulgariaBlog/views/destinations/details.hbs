@@ -1,0 +1,19 @@
+{{> header}}
+
+<div class="container home some">
+    <img class="det-img" src="{{imageURL}}" />
+    <div class="desc">
+        <h2 class="display-5">{{title}}</h2>
+        <p class="idea-description">{{ region }}</p>
+        <p class="infoType">Description:</p>
+        <p class="idea-description">{{ description }}</p>
+    </div>
+
+    <div class="text-center">
+        <a class="btn detb" href="#/destinations/dashboard">Back</a>
+        <a class="btn detb" href="#/destinations/close/{{id}}">Delete</a>
+    </div>
+
+</div>
+
+{{> footer}}

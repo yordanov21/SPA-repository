@@ -39,5 +39,4 @@ export default {
             notification.remove();
         }, 5000);
     }
-
 }

@@ -7,13 +7,17 @@ const app = Sammy('#root', function() {
 
     //Home
     this.get('#/home', controllers.home.get.home);
+
     //About
     this.get('#/about', controllers.home.get.about);
 
     //Articles
     this.get('#/articles/mountains', controllers.articles.get.mountain);
     this.get('#/articles/cities', controllers.articles.get.city);
-    //tuirism101sides
+    this.get('#/articles/sea', controllers.articles.get.sea);
+    this.get('#/articles/legacy', controllers.articles.get.legacy);
+
+    //Tuirism101sides
     this.get('#/tourist101sites/tourist101sites', controllers.tourist101sides.get.sites);
 
     //User
@@ -24,22 +28,18 @@ const app = Sammy('#root', function() {
     this.post('#/user/register', controllers.user.post.register);
     this.get('#/user/logout', controllers.user.get.logout);
 
-    //Cause
-    this.get('#/cause/dashboard', controllers.cause.get.dashboard);
+    //destinations dashboard
+    this.get('#/destinations/dashboard', controllers.destinations.get.dashboard);
 
-    ////create
-    this.get('#/cause/create', controllers.cause.get.create);
-    this.post('#/cause/create', controllers.cause.post.create);
+    ////create destinations
+    this.get('#/destinations/create', controllers.destinations.get.create);
+    this.post('#/destinations/create', controllers.destinations.post.create);
 
-    this.get('#/cause/create101sites', controllers.cause.get.create101sites);
-    this.post('#/cause/create101sites', controllers.cause.post.create);
+    this.get('#/destinations/create101sites', controllers.destinations.get.create101sites);
+    this.post('#/destinations/create101sites', controllers.destinations.post.create);
 
-    this.get('#/cause/details/:causeId', controllers.cause.get.details);
-
-
-    this.get('#/cause/close/:causeId', controllers.cause.del.close);
-    this.post('#/cause/donate/:causeId', controllers.cause.put.donate);
-
+    this.get('#/destinations/details/:destinationId', controllers.destinations.get.details);
+    this.get('#/destinations/close/:destinationId', controllers.destinations.del.close);
 });
 
 (() => {

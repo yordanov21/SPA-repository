@@ -2,9 +2,9 @@ import models from '../models/index.js';
 import extend from '../utils/context.js';
 import notifications from './notification.js'
 export default {
-    //създаваме си два обекта get и пост
+    //create two objects: get and post
     get: {
-        //context се подава defaut от Sammy
+        //context is coming default from Sammy
         login(context) {
 
             extend(context).then(function() {
@@ -22,7 +22,6 @@ export default {
 
                 context.redirect('#/home')
             })
-
         }
     },
     post: {
@@ -39,7 +38,6 @@ export default {
                     context.redirect('#/home');
 
                     notifications.succsessNotofocation('Login Successful!');
-
                 })
                 .catch((e) => console.error(e));
         },
@@ -47,16 +45,14 @@ export default {
 
             const { username, password, repeatPassword } = context.params;
             if (password === repeatPassword) {
-                debugger;
+
                 models.user.register(username, password)
                     .then((response) => {
                         context.redirect('#/user/login');
                     })
-                    .catch((e) => console.error(e));
 
-
+                .catch((e) => console.error(e));
             }
-
         }
     }
 };

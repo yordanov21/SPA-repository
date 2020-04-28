@@ -4,15 +4,13 @@ export default function(context) {
         if (user) {
             // User is signed in.
             context.isLoggedIn = true;
-            context.userId = user.uid // идва от fb
+            context.userId = user.uid // comes from firebase
                 //get email for username
             context.username = user.email;
 
             //set to logal storage
             localStorage.setItem('userId', user.uid)
             localStorage.setItem('userEmail', user.email)
-
-            // ...
         } else {
             // User is signed out.
             //set isLoggedIn to false
@@ -22,12 +20,10 @@ export default function(context) {
             context.username = null;
             localStorage.removeItem('userId');
             localStorage.removeItem('userEmail');
-
-            // ...
         }
     });
 
-    //да не забравим return :)
+    //don't forgot return :)
     return context.loadPartials({
         header: '../views/common/header.hbs',
         footer: '../views/common/footer.hbs'

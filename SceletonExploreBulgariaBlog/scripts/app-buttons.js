@@ -13,8 +13,6 @@ function myFunction(e) {
     console.log(dots);
     console.log(moreText);
 
-
-
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
@@ -25,7 +23,6 @@ function myFunction(e) {
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
         destination.style.width = '30%';
-
     }
 }
 
@@ -44,22 +41,15 @@ function getItfunction(e) {
     titleDestination = mainSection.childNodes[3];
     regionDestination = mainSection.childNodes[5];
     paragrah = mainSection.childNodes[7];
-    // var dots = paragrah.childNodes[1];
-    // var moreText = paragrah.childNodes[3];
-    // console.log(dots);
-    // console.log(moreText);
 
     imageDestination = mainSection.childNodes[1].childNodes[1].src;
     console.log(titleDestination);
     console.log(regionDestination);
     console.log(paragrah);
     console.log(imageDestination);
-
-
 }
 
 function loadDestination(e) {
-
     console.log(titleDestination);
 
     let btnText = e;
@@ -79,5 +69,5 @@ function loadDestination(e) {
     regionInput.value = regionDestination.textContent;
     destinationInput.textContent = paragrah.textContent;
     imageInput.value = imageDestination;
-    e.preventDefault();
+    // e.preventDefault();
 }

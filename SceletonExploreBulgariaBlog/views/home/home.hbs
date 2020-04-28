@@ -1,16 +1,20 @@
 {{> header}}
 
 {{#if isLoggedIn}}
+<div class="mainpart">
+    <h1>101 Аmazing Tourist Sites in Bulgaria</h1>
+    <div class="bottom text-center">
+        <a class="btn btn-secondary btn-lg " href="#/tourist101sites/tourist101sites">Here 101 Tourist Sites</a>
+    </div>
+</div>
 <div class="container home wrapper  my-md-5 pl-md-5">
     <div class="profile home-text col-md-6 text-center col-lg">
         <img class="profile-img" src="./images/user.png" />
         <div class="profile-info">
             <p>Username: <small>{{ username}}</small></p>
-            <p class="infoType">Has {{ideas.count}} ideas =)</p>
-
+            <p class="infoType">Has {{ destinations.length}} destinations =)</p>
             <p>Dinner Recipe</p>
             <p>4 easy DIY ideas to try!</p>
-            <p>No ideas yet</p>
         </div>
     </div>
 </div>
@@ -34,7 +38,7 @@
                 </p>
             </section>
         </a>
-        <a href="">
+        <a href="#/articles/sea">
             <section class="sea destination" id="article_sea">
                 <h2>Еnjoy the Black Sea coast</h2>
                 <p >The Bulgarian Black Sea Coast , covers the entire eastern bound of Bulgaria
@@ -65,7 +69,7 @@
                 </p>
             </section>
         </a>
-        <a href="">
+        <a href="#/articles/legacy">
             <section class="legacy destination" id="article_legacy">
                 <h2>Expore the Legacy of Bulgaria</h2>
                 <p >Bulgaria is a country with 1900 years of history. The land is famous for its

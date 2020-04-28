@@ -1,7 +1,7 @@
 import user from './user.js';
-import cause from './cause.js'
+import destination from './destination.js'
 
 export default {
     user,
-    cause
+    destination
 }
