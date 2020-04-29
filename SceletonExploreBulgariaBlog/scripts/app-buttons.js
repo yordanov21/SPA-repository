@@ -22,7 +22,7 @@ function myFunction(e) {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        destination.style.width = '30%';
+        destination.style.width = '35%';
     }
 }
 

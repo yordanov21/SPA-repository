@@ -35,6 +35,10 @@
     box-shadow: 0 0 20px gray;
 }
 
+.mainsection p {
+    font-size: 15px;
+}
+
 .site:hover {
     transition: transform 0.7s;
     transform: scale(1.05);
