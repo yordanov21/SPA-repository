@@ -1,6 +1,7 @@
 import extend from '../utils/context.js';
 import models from '../models/index.js';
 import docModifier from '../utils/doc-modifier.js';
+
 export default {
     //get object
     get: {
@@ -10,7 +11,7 @@ export default {
 
                 const destinations = response.docs
                     .map(docModifier)
-                    .filter(x => x.creator === localStorage.getItem('userEmail'));
+                    .filter(x => x.creator === localStorage.getItem('userEmail')).sort((a, b) => a.number - b.number);
 
                 //to show destination on the screen :)
                 context.destinations = destinations;
@@ -63,7 +64,7 @@ export default {
                 ...context.params,
                 uId: localStorage.getItem('userId'),
                 creator: localStorage.getItem('userEmail'),
-                // destinations: []
+                number: context.params.title.split('.')[0] == !Number ? context.params.title.split('.')[0] : 102
             };
 
             models.destination.create(data).then((response) => {

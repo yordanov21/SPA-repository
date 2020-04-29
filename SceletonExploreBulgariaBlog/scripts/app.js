@@ -19,7 +19,10 @@ const app = Sammy('#root', function() {
 
     //Tuirism101sides
     this.get('#/tourist101sites/tourist101sites', controllers.tourist101sides.get.sites);
-
+    this.get('#/tourist101sites/tourist101sites2', controllers.tourist101sides.get.sites2);
+    this.get('#/tourist101sites/tourist101sites3', controllers.tourist101sides.get.sites3);
+    this.get('#/tourist101sites/tourist101sites4', controllers.tourist101sides.get.sites4);
+    this.get('#/tourist101sites/tourist101sites5', controllers.tourist101sides.get.sites5);
     //User
     this.get('#/user/login', controllers.user.get.login);
     this.get('#/user/register', controllers.user.get.register);
