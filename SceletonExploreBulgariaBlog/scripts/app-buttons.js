@@ -5,6 +5,10 @@ function myFunction(e) {
     var mainSection = destination.childNodes[1];
 
     console.log(mainSection);
+    var imageContainer = mainSection.childNodes[1];
+    var image = imageContainer.childNodes[1];
+    console.log(image);
+
     var paragrah = mainSection.childNodes[7];
     console.log(paragrah);
 
@@ -18,11 +22,47 @@ function myFunction(e) {
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
         destination.style.width = '20%';
+        // image.style.height = '240px';
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
         destination.style.width = '35%';
+        // image.style.height = '420px';
+    }
+}
+
+function myFunction101(e) {
+    let btnText = e;
+    let destination = btnText.parentNode.parentNode.parentNode;
+
+    var mainSection = destination.childNodes[1];
+
+    console.log(mainSection);
+    var imageContainer = mainSection.childNodes[1];
+    var image = imageContainer.childNodes[1];
+    console.log(image);
+
+    var paragrah = mainSection.childNodes[7];
+    console.log(paragrah);
+
+    var dots = paragrah.childNodes[1];
+    var moreText = paragrah.childNodes[3];
+    console.log(dots);
+    console.log(moreText);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        destination.style.width = '50%';
+        // image.style.height = '240px';
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+        destination.style.width = '60%';
+        // image.style.height = '420px';
     }
 }
 

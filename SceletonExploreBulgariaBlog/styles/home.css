@@ -74,7 +74,7 @@ textarea {
     /* background-color: gainsboro; */
     color: white;
     height: 100%;
-    border-radius: 1em;
+    /* border-radius: 1em; */
     margin-top: 1em;
     margin-bottom: 2em;
     box-shadow: 0 0 20px gray;
@@ -156,9 +156,10 @@ textarea {
 .destination:hover {
     /* Animation */
     transition: transform .5s;
-    /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     transform: scale(1.05);
     background-color: rgba(155, 15, 15, 0.15);
+    /* opacity: 0.95; */
 }
 
 .destination p {
