@@ -71,7 +71,7 @@ export default {
                 console.log(response);
                 context.redirect('#/destinations/dashboard')
             }).catch((e) => console.error(e));
-        }
+        },
     },
     //delete destination
     del: {

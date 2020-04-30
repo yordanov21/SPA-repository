@@ -23,13 +23,14 @@ const app = Sammy('#root', function() {
     this.get('#/tourist101sites/tourist101sites3', controllers.tourist101sides.get.sites3);
     this.get('#/tourist101sites/tourist101sites4', controllers.tourist101sides.get.sites4);
     this.get('#/tourist101sites/tourist101sites5', controllers.tourist101sides.get.sites5);
+
     //User
     this.get('#/user/login', controllers.user.get.login);
     this.get('#/user/register', controllers.user.get.register);
+    this.get('#/user/logout', controllers.user.get.logout);
 
     this.post('#/user/login', controllers.user.post.login);
     this.post('#/user/register', controllers.user.post.register);
-    this.get('#/user/logout', controllers.user.get.logout);
 
     //destinations dashboard
     this.get('#/destinations/dashboard', controllers.destinations.get.dashboard);
