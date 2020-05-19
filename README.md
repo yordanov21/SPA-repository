@@ -1,8 +1,6 @@
 # SPA-repository
-test 
-test 2
 
-test 3
+SPA for 101 Аmazing Tourist Sites in Bulgaria
 
-test 4 in github
-test 5 in github
+It is a project based on Javascript/HTML5/CSS/FireBase Platform using JavaScript library Handelbars and Sammy.js framework.
+The project is not finished yet(some sheets need to be finished, but the main functionality work correctly)
