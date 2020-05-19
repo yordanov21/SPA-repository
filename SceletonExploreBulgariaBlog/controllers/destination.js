@@ -64,7 +64,7 @@ export default {
                 ...context.params,
                 uId: localStorage.getItem('userId'),
                 creator: localStorage.getItem('userEmail'),
-                number: context.params.title.split('.')[0] == !Number ? context.params.title.split('.')[0] : 102
+                number: context.params.title.split('.')[0] == !Number ? 102 : context.params.title.split('.')[0]
             };
 
             models.destination.create(data).then((response) => {
